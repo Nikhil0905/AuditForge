@@ -1,0 +1,36 @@
+AuditForge Report - 2025-07-21 00:13:17 (Host: parrot)
+
+CIS Benchmark Score: 18.8 ({'Network': 0.0, 'User': 0.0, 'Service': 0.0, 'FileSystem': 75.0})
+
+[Network] ❌ No active firewall detected
+[Network] ❌ Insecure/legacy open ports: udp   UNCONN 0      0            0.0.0.0:51433      0.0.0.0:*   
+[Service] ❌ accounts-daemon.service (not in allowlist)
+[Service] ❌ bluetooth.service (not in allowlist)
+[Service] ❌ containerd.service (not in allowlist)
+[Service] ❌ dnsmasq.service (not in allowlist)
+[Service] ❌ docker.service (not in allowlist)
+[Service] ❌ getty@tty1.service (not in allowlist)
+[Service] ❌ haveged.service (not in allowlist)
+[Service] ❌ lightdm.service (not in allowlist)
+[Service] ❌ ModemManager.service (not in allowlist)
+[Service] ❌ nessusd.service (not in allowlist)
+[Service] ❌ pcscd.service (not in allowlist)
+[Service] ❌ polkit.service (not in allowlist)
+[Service] ❌ power-profiles-daemon.service (not in allowlist)
+[Service] ❌ rngd.service (not in allowlist)
+[Service] ❌ rtkit-daemon.service (not in allowlist)
+[Service] ❌ smartmontools.service (not in allowlist)
+[Service] ❌ udisks2.service (not in allowlist)
+[Service] ❌ upower.service (not in allowlist)
+[Service] ❌ user@1000.service (not in allowlist)
+[Service] ❌ uuidd.service (not in allowlist)
+[Service] ❌ wpa_supplicant.service (not in allowlist)
+[User] ⚠️ PermitRootLogin not set in sshd_config
+[User] ⚠️ PasswordAuthentication not set in sshd_config
+[User] ⚠️ MaxAuthTries not set in sshd_config
+[User] ⚠️ Protocol not set in sshd_config
+[User] ⚠️ Port not set in sshd_config
+[FileSystem] ✅ /etc/passwd permissions OK: 0o644
+[FileSystem] ✅ /etc/passwd ownership OK (root)
+[FileSystem] ⚠️ /etc/shadow permissions 0o640 (expected 0o600)
+[FileSystem] ✅ /etc/shadow ownership OK (root)

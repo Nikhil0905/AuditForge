@@ -1,0 +1,4 @@
+# Requirements for AuditForge
+psutil
+jinja2  # For HTML report generation (optional but recommended)
+plotly   # For future dashboard features (optional) 

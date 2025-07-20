@@ -1,0 +1,173 @@
+{
+  "timestamp": "2025-07-21 00:13:17",
+  "host": "parrot",
+  "cis_score": 18.8,
+  "cis_breakdown": {
+    "Network": 0.0,
+    "User": 0.0,
+    "Service": 0.0,
+    "FileSystem": 75.0
+  },
+  "findings": [
+    {
+      "category": "Network",
+      "description": "No active firewall detected",
+      "status": "FAIL"
+    },
+    {
+      "category": "Network",
+      "description": "Insecure/legacy open ports: udp   UNCONN 0      0            0.0.0.0:51433      0.0.0.0:*   ",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "accounts-daemon.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "bluetooth.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "containerd.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "dnsmasq.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "docker.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "getty@tty1.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "haveged.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "lightdm.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "ModemManager.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "nessusd.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "pcscd.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "polkit.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "power-profiles-daemon.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "rngd.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "rtkit-daemon.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "smartmontools.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "udisks2.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "upower.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "user@1000.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "uuidd.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "Service",
+      "description": "wpa_supplicant.service (not in allowlist)",
+      "status": "FAIL"
+    },
+    {
+      "category": "User",
+      "description": "PermitRootLogin not set in sshd_config",
+      "status": "WARN"
+    },
+    {
+      "category": "User",
+      "description": "PasswordAuthentication not set in sshd_config",
+      "status": "WARN"
+    },
+    {
+      "category": "User",
+      "description": "MaxAuthTries not set in sshd_config",
+      "status": "WARN"
+    },
+    {
+      "category": "User",
+      "description": "Protocol not set in sshd_config",
+      "status": "WARN"
+    },
+    {
+      "category": "User",
+      "description": "Port not set in sshd_config",
+      "status": "WARN"
+    },
+    {
+      "category": "FileSystem",
+      "description": "/etc/passwd permissions OK: 0o644",
+      "status": "PASS"
+    },
+    {
+      "category": "FileSystem",
+      "description": "/etc/passwd ownership OK (root)",
+      "status": "PASS"
+    },
+    {
+      "category": "FileSystem",
+      "description": "/etc/shadow permissions 0o640 (expected 0o600)",
+      "status": "WARN"
+    },
+    {
+      "category": "FileSystem",
+      "description": "/etc/shadow ownership OK (root)",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+2025-07-21 00:01:23,769 [INFO] Starting AuditForge full system audit...
+2025-07-21 00:01:23,830 [INFO] UFW status:
+Status: inactive
+2025-07-21 00:01:23,830 [WARNING] CIS FAIL: [Network] No active firewall detected
+2025-07-21 00:01:23,853 [INFO] Open ports:
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:Port
+udp   UNCONN 0      0            0.0.0.0:1900       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:1900       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:51433      0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:52276      0.0.0.0:*   
+udp   UNCONN 0      0        224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0        224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0        224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0        224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0        224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:38258      0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:56775      0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:53         0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:57621      0.0.0.0:*   
+udp   UNCONN 0      0                  *:52119            *:*   
+udp   UNCONN 0      0               [::]:5353          [::]:*   
+udp   UNCONN 0      0               [::]:5353          [::]:*   
+udp   UNCONN 0      0               [::]:53            [::]:*   
+tcp   LISTEN 0      1024         0.0.0.0:8834       0.0.0.0:*   
+tcp   LISTEN 0      10           0.0.0.0:57621      0.0.0.0:*   
+tcp   LISTEN 0      4096         0.0.0.0:41205      0.0.0.0:*   
+tcp   LISTEN 0      32           0.0.0.0:53         0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.1:34717      0.0.0.0:*   
+tcp   LISTEN 0      1024            [::]:8834          [::]:*   
+tcp   LISTEN 0      32              [::]:53            [::]:*   
+2025-07-21 00:01:23,854 [WARNING] Insecure/legacy ports detected:
+udp   UNCONN 0      0            0.0.0.0:51433      0.0.0.0:*   
+2025-07-21 00:01:23,854 [WARNING] CIS FAIL: [Network] No insecure/legacy open ports
+2025-07-21 00:01:23,877 [INFO] Active services listed.
+2025-07-21 00:01:23,877 [WARNING] Service flagged: accounts-daemon.service (not in allowlist)
+2025-07-21 00:01:23,878 [WARNING] Service flagged: bluetooth.service (not in allowlist)
+2025-07-21 00:01:23,878 [WARNING] Service flagged: containerd.service (not in allowlist)
+2025-07-21 00:01:23,878 [WARNING] Service flagged: dnsmasq.service (not in allowlist)
+2025-07-21 00:01:23,878 [WARNING] Service flagged: docker.service (not in allowlist)
+2025-07-21 00:01:23,878 [WARNING] Service flagged: getty@tty1.service (not in allowlist)
+2025-07-21 00:01:23,878 [WARNING] Service flagged: haveged.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: lightdm.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: ModemManager.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: nessusd.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: pcscd.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: polkit.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: power-profiles-daemon.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: rngd.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: rtkit-daemon.service (not in allowlist)
+2025-07-21 00:01:23,879 [WARNING] Service flagged: smartmontools.service (not in allowlist)
+2025-07-21 00:01:23,880 [WARNING] Service flagged: udisks2.service (not in allowlist)
+2025-07-21 00:01:23,880 [WARNING] Service flagged: upower.service (not in allowlist)
+2025-07-21 00:01:23,880 [WARNING] Service flagged: user@1000.service (not in allowlist)
+2025-07-21 00:01:23,880 [WARNING] Service flagged: uuidd.service (not in allowlist)
+2025-07-21 00:01:23,880 [WARNING] Service flagged: wpa_supplicant.service (not in allowlist)
+2025-07-21 00:01:23,880 [WARNING] CIS FAIL: [Service] accounts-daemon.service (not in allowlist)
+2025-07-21 00:01:23,880 [WARNING] CIS FAIL: [Service] bluetooth.service (not in allowlist)
+2025-07-21 00:01:23,881 [WARNING] CIS FAIL: [Service] containerd.service (not in allowlist)
+2025-07-21 00:01:23,881 [WARNING] CIS FAIL: [Service] dnsmasq.service (not in allowlist)
+2025-07-21 00:01:23,881 [WARNING] CIS FAIL: [Service] docker.service (not in allowlist)
+2025-07-21 00:01:23,881 [WARNING] CIS FAIL: [Service] getty@tty1.service (not in allowlist)
+2025-07-21 00:01:23,881 [WARNING] CIS FAIL: [Service] haveged.service (not in allowlist)
+2025-07-21 00:01:23,881 [WARNING] CIS FAIL: [Service] lightdm.service (not in allowlist)
+2025-07-21 00:01:23,881 [WARNING] CIS FAIL: [Service] ModemManager.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] nessusd.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] pcscd.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] polkit.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] power-profiles-daemon.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] rngd.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] rtkit-daemon.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] smartmontools.service (not in allowlist)
+2025-07-21 00:01:23,882 [WARNING] CIS FAIL: [Service] udisks2.service (not in allowlist)
+2025-07-21 00:01:23,883 [WARNING] CIS FAIL: [Service] upower.service (not in allowlist)
+2025-07-21 00:01:23,883 [WARNING] CIS FAIL: [Service] user@1000.service (not in allowlist)
+2025-07-21 00:01:23,883 [WARNING] CIS FAIL: [Service] uuidd.service (not in allowlist)
+2025-07-21 00:01:23,883 [WARNING] CIS FAIL: [Service] wpa_supplicant.service (not in allowlist)
+2025-07-21 00:01:23,884 [WARNING] CIS FAIL: [User] PermitRootLogin not set in sshd_config
+2025-07-21 00:01:23,884 [WARNING] CIS FAIL: [User] PasswordAuthentication not set in sshd_config
+2025-07-21 00:01:23,884 [WARNING] CIS FAIL: [User] MaxAuthTries not set in sshd_config
+2025-07-21 00:01:23,884 [WARNING] CIS FAIL: [User] Protocol not set in sshd_config
+2025-07-21 00:01:23,884 [WARNING] CIS FAIL: [User] Port not set in sshd_config
+2025-07-21 00:01:23,885 [INFO] CIS PASS: [FileSystem] /etc/passwd permissions
+2025-07-21 00:01:23,885 [INFO] CIS PASS: [FileSystem] /etc/passwd ownership
+2025-07-21 00:01:23,885 [WARNING] CIS FAIL: [FileSystem] /etc/shadow permissions
+2025-07-21 00:01:23,885 [INFO] CIS PASS: [FileSystem] /etc/shadow ownership
+2025-07-21 00:01:23,886 [WARNING] chkrootkit not found.
+2025-07-21 00:01:23,886 [WARNING] rkhunter not found.
+2025-07-21 00:01:33,733 [WARNING] Suspicious SUID binaries found:
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+2025-07-21 00:01:33,781 [WARNING] Hidden processes detected:
+root           2  0.0  0.0      0     0 ?        S    Jul15   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Jul15   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           5  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-rcu_gp]
+root           6  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-sync_wq]
+root           7  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/0:0H-events_highpri]
+root          13  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        I    Jul15   0:00 [rcu_tasks_kthread]
+root          15  0.0  0.0      0     0 ?        I    Jul15   0:00 [rcu_tasks_rude_kthread]
+root          16  0.0  0.0      0     0 ?        I    Jul15   0:00 [rcu_tasks_trace_kthread]
+root          17  0.0  0.0      0     0 ?        S    Jul15   0:03 [ksoftirqd/0]
+root          18  0.0  0.0      0     0 ?        I    Jul15   2:30 [rcu_preempt]
+root          19  0.0  0.0      0     0 ?        S    Jul15   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          20  0.0  0.0      0     0 ?        S    Jul15   0:00 [rcu_exp_gp_kthread_worker]
+root          21  0.0  0.0      0     0 ?        S    Jul15   0:14 [migration/0]
+root          22  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/0]
+root          23  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/0]
+root          24  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/2]
+root          25  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/2]
+root          26  0.0  0.0      0     0 ?        S    Jul15   0:10 [migration/2]
+root          27  0.0  0.0      0     0 ?        S    Jul15   0:01 [ksoftirqd/2]
+root          29  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/2:0H-events_highpri]
+root          30  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/4]
+root          31  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/4]
+root          32  0.0  0.0      0     0 ?        S    Jul15   0:08 [migration/4]
+root          33  0.0  0.0      0     0 ?        S    Jul15   0:02 [ksoftirqd/4]
+root          35  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/4:0H-events_highpri]
+root          36  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/6]
+root          37  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/6]
+root          38  0.0  0.0      0     0 ?        S    Jul15   0:06 [migration/6]
+root          39  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/6]
+root          41  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/6:0H-events_highpri]
+root          42  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/8]
+root          43  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/8]
+root          44  0.0  0.0      0     0 ?        S    Jul15   1:03 [migration/8]
+root          45  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/8]
+root          47  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/8:0H-events_highpri]
+root          48  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/9]
+root          49  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/9]
+root          50  0.0  0.0      0     0 ?        S    Jul15   0:40 [migration/9]
+root          51  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/9]
+root          53  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/9:0H-events_highpri]
+root          54  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/10]
+root          55  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/10]
+root          56  0.0  0.0      0     0 ?        S    Jul15   0:29 [migration/10]
+root          57  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/10]
+root          59  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/10:0H-events_highpri]
+root          60  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/11]
+root          61  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/11]
+root          62  0.0  0.0      0     0 ?        S    Jul15   0:21 [migration/11]
+root          63  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/11]
+root          65  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/11:0H-events_highpri]
+root          66  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/12]
+root          67  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/12]
+root          68  0.0  0.0      0     0 ?        S    Jul15   0:24 [migration/12]
+root          69  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/12]
+root          71  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/12:0H-events_highpri]
+root          72  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/13]
+root          73  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/13]
+root          74  0.0  0.0      0     0 ?        S    Jul15   0:14 [migration/13]
+root          75  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/13]
+root          77  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/13:0H-events_highpri]
+root          78  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/14]
+root          79  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/14]
+root          80  0.0  0.0      0     0 ?        S    Jul15   0:11 [migration/14]
+root          81  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/14]
+root          84  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/15]
+root          85  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/15]
+root          86  0.0  0.0      0     0 ?        S    Jul15   0:07 [migration/15]
+root          87  0.0  0.0      0     0 ?        S    Jul15   0:02 [ksoftirqd/15]
+root          89  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/15:0H-events_highpri]
+root          90  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/1]
+root          91  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/1]
+root          92  0.0  0.0      0     0 ?        S    Jul15   0:03 [migration/1]
+root          93  0.0  0.0      0     0 ?        S    Jul15   0:03 [ksoftirqd/1]
+root          95  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/1:0H-events_highpri]
+root          96  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/3]
+root          97  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/3]
+root          98  0.0  0.0      0     0 ?        S    Jul15   0:02 [migration/3]
+root          99  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/3]
+root         101  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/3:0H-events_highpri]
+root         102  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/5]
+root         103  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/5]
+root         104  0.0  0.0      0     0 ?        S    Jul15   0:02 [migration/5]
+root         105  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/5]
+root         107  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/5:0H-events_highpri]
+root         108  0.0  0.0      0     0 ?        S    Jul15   0:00 [cpuhp/7]
+root         109  0.0  0.0      0     0 ?        S    Jul15   0:00 [idle_inject/7]
+root         110  0.0  0.0      0     0 ?        S    Jul15   0:01 [migration/7]
+root         111  0.0  0.0      0     0 ?        S    Jul15   0:00 [ksoftirqd/7]
+root         113  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/7:0H-events_highpri]
+root         127  0.0  0.0      0     0 ?        S    Jul15   0:00 [kdevtmpfs]
+root         128  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-inet_frag_wq]
+root         129  0.0  0.0      0     0 ?        S    Jul15   0:00 [kauditd]
+root         130  0.0  0.0      0     0 ?        S    Jul15   0:00 [khungtaskd]
+root         131  0.0  0.0      0     0 ?        S    Jul15   0:00 [oom_reaper]
+root         132  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-writeback]
+root         133  0.0  0.0      0     0 ?        S    Jul15   1:18 [kcompactd0]
+root         134  0.0  0.0      0     0 ?        SN   Jul15   0:00 [ksmd]
+root         135  0.0  0.0      0     0 ?        SN   Jul15   0:09 [khugepaged]
+root         136  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-kintegrityd]
+root         137  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-kblockd]
+root         138  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-blkcg_punt_bio]
+root         140  0.2  0.0      0     0 ?        S    Jul15  18:48 [irq/9-acpi]
+root         142  0.0  0.0      0     0 ?        I    Jul15   0:09 [kworker/3:1-events]
+root         148  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-tpm_dev_wq]
+root         149  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-edac-poller]
+root         150  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-devfreq_wq]
+root         152  0.0  0.0      0     0 ?        I<   Jul15   0:05 [kworker/8:1H-events_highpri]
+root         153  0.0  0.0      0     0 ?        S    Jul15   0:21 [kswapd0]
+root         160  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-kthrotld]
+root         170  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-acpi_thermal_pm]
+root         171  0.0  0.0      0     0 ?        S    Jul15   0:17 [hwrng]
+root         172  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-hfi-updates]
+root         174  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-mld]
+root         177  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-ipv6_addrconf]
+root         178  0.0  0.0      0     0 ?        I<   Jul15   0:05 [kworker/9:1H-events_highpri]
+root         187  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-kstrp]
+root         198  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-cryptd]
+root         290  0.0  0.0      0     0 ?        I<   Jul15   0:05 [kworker/2:1H-events_highpri]
+root         327  0.0  0.0      0     0 ?        I<   Jul15   0:03 [kworker/0:1H-events_highpri]
+root         372  0.0  0.0      0     0 ?        I<   Jul15   0:05 [kworker/4:1H-events_highpri]
+root         373  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/7:1H-kblockd]
+root         374  0.0  0.0      0     0 ?        I<   Jul15   0:05 [kworker/15:1H-events_highpri]
+root         375  0.0  0.0      0     0 ?        I<   Jul15   0:05 [kworker/6:1H-events_highpri]
+root         376  0.0  0.0      0     0 ?        I<   Jul15   0:03 [kworker/11:1H-events_highpri]
+root         377  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/5:1H-kblockd]
+root         378  0.0  0.0      0     0 ?        I<   Jul15   0:10 [kworker/14:1H-events_highpri]
+root         379  0.0  0.0      0     0 ?        I<   Jul15   0:15 [kworker/13:1H-events_highpri]
+root         380  0.0  0.0      0     0 ?        I<   Jul15   0:02 [kworker/1:1H-events_highpri]
+root         381  0.0  0.0      0     0 ?        I<   Jul15   0:04 [kworker/12:1H-events_highpri]
+root         386  0.0  0.0      0     0 ?        I<   Jul15   0:01 [kworker/3:1H-events_highpri]
+root         401  0.0  0.0      0     0 ?        I<   Jul15   0:04 [kworker/10:1H-events_highpri]
+root         404  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-nvme-wq]
+root         405  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-nvme-reset-wq]
+root         406  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-nvme-delete-wq]
+root         407  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-nvme-auth-wq]
+root         414  0.0  0.0      0     0 ?        S    Jul15   0:00 [irq/125-SYNA32EA:00]
+root         422  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-ttm]
+root         423  0.0  0.0      0     0 ?        S    Jul15   0:00 [card0-crtc0]
+root         424  0.0  0.0      0     0 ?        S    Jul15   0:00 [card0-crtc1]
+root         425  0.0  0.0      0     0 ?        S    Jul15   0:00 [card0-crtc2]
+root         426  0.0  0.0      0     0 ?        S    Jul15   0:00 [card0-crtc3]
+root         444  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-xfsalloc]
+root         445  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-xfs_mru_cache]
+root         452  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-md]
+root         453  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-md_bitmap]
+root         458  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-raid5wq]
+root         503  0.0  0.0      0     0 ?        S    Jul15   0:50 [jbd2/nvme0n1p6-8]
+root         504  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-ext4-rsv-conversion]
+root         554  0.0  0.0      0     0 ?        S    Jul15   0:00 [psimon]
+root         615  0.0  0.0      0     0 ?        S    Jul15   0:00 [psimon]
+root         684  0.0  0.0      0     0 ?        S    Jul15   0:00 [watchdogd]
+root         710  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-cfg80211]
+root         711  0.0  0.0      0     0 ?        S    Jul15   0:00 [irq/16-processor_thermal_device_pci]
+root         868  0.0  0.0      0     0 ?        I<   Jul15   0:00 [kworker/R-USBC000:00-con1]
+root        1081  0.0  0.0      0     0 ?        S    Jul15   0:00 [irq/159-AudioDSP]
+root        1134  0.2  0.0      0     0 ?        S    Jul15  15:12 [irq/160-rtw89_pci]
+root        1527  0.0  0.0      0     0 ?        S<   Jul15   0:00 [krfcommd]
+root      208347  0.0  0.0      0     0 ?        I<   Jul17   0:00 [kworker/14:2H]
+root      313550  0.0  0.0      0     0 ?        I    Jul17   0:05 [kworker/7:0-mm_percpu_wq]
+root      330679  0.0  0.0      0     0 ?        I    Jul17   0:12 [kworker/13:1-i915-unordered]
+root      431360  0.0  0.0      0     0 ?        I    Jul18   0:04 [kworker/15:2-events]
+root      436293  0.0  0.0      0     0 ?        I    Jul18   0:03 [kworker/11:0-events]
+root      534111  0.0  0.0      0     0 ?        I    Jul19   0:03 [kworker/10:0-events]
+root      534337  0.0  0.0      0     0 ?        I    Jul19   0:01 [kworker/5:2-mm_percpu_wq]
+root      540515  0.0  0.0      0     0 ?        I    Jul19   0:06 [kworker/6:1-events]
+root      650485  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/9:1-events]
+root      654064  0.0  0.0      0     0 ?        I    Jul20   0:01 [kworker/14:2-i915-unordered]
+root      656792  0.0  0.0      0     0 ?        I    Jul20   0:14 [kworker/u64:16-kvfree_rcu_reclaim]
+root      656835  0.0  0.0      0     0 ?        S    Jul20   0:00 [irq/124-mei_me]
+root      656951  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/1:0-events]
+root      656956  0.0  0.0      0     0 ?        I    Jul20   0:01 [kworker/8:2-events]
+root      657047  0.0  0.0      0     0 ?        I    Jul20   0:01 [kworker/2:0-events]
+root      658641  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/5:1-events]
+root      658666  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/7:1-mm_percpu_wq]
+root      659409  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/0:1-cgroup_destroy]
+root      659571  0.3  0.0      0     0 ?        I    Jul20   0:11 [kworker/u64:0-i915]
+root      665051  0.1  0.0      0     0 ?        I<   Jul20   0:02 [kworker/u65:3-rtw89_tx_wq]
+root      665139  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/4:3-i915-unordered]
+root      667088  0.1  0.0      0     0 ?        I    Jul20   0:02 [kworker/12:0-i915-unordered]
+root      667503  0.2  0.0      0     0 ?        I    Jul20   0:02 [kworker/u64:1-kvfree_rcu_reclaim]
+root      667800  0.1  0.0      0     0 ?        I<   Jul20   0:01 [kworker/u65:1-rtw89_tx_wq]
+root      667820  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/9:2-events]
+root      668097  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/10:1-events]
+root      668432  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/7:2-mm_percpu_wq]
+root      668591  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/8:0-mm_percpu_wq]
+root      668645  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/3:2-events]
+root      668703  0.3  0.0      0     0 ?        I    Jul20   0:02 [kworker/u64:3-events_unbound]
+root      668723  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/0:2-events]
+root      668834  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/4:1-events]
+root      668835  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/6:2-events]
+root      668839  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/12:2-i915-unordered]
+root      668840  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/14:0-events]
+root      668847  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/13:2-events]
+root      669293  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/11:2-events]
+root      669468  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/2:2-mm_percpu_wq]
+root      669926  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/15:1-mm_percpu_wq]
+root      669990  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/1:1-events]
+root      670005  0.1  0.0      0     0 ?        I<   Jul20   0:00 [kworker/u65:2-rtw89_tx_wq]
+root      670098  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/0:0-events]
+root      670116  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/4:0-mm_percpu_wq]
+root      670117  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/6:0-i915-unordered]
+root      670118  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/12:1-i915-unordered]
+root      670119  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/8:1-i915-unordered]
+root      670188  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/13:0-i915-unordered]
+root      670189  0.3  0.0      0     0 ?        I    Jul20   0:00 [kworker/u64:2-kvfree_rcu_reclaim]
+root      670261  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/2:1-events]
+root      670262  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/3:0]
+root      670313  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/14:1-events]
+root      670328  0.0  0.0      0     0 ?        I    Jul20   0:00 [kworker/11:1]
+root      670370  0.0  0.0      0     0 ?        I    00:00   0:00 [kworker/5:0]
+root      670458  0.0  0.0      0     0 ?        I    00:00   0:00 [kworker/0:3]
+root      670494  0.1  0.0      0     0 ?        D<   00:01   0:00 [kworker/u65:0+i915_flip]
+root      670530  0.0  0.0      0     0 ?        I    00:01   0:00 [kworker/1:2]
+root      670730  0.0  0.0      0     0 ?        I    00:01   0:00 [kworker/9:0]
+root      670743  0.0  0.0   2584  1580 pts/16   S+   00:01   0:00 /bin/sh -c ps aux | grep "\[.*\]"
+root      670745  0.0  0.0   6476  2296 pts/16   S+   00:01   0:00 grep \[.*\]
+2025-07-21 00:01:33,794 [INFO] No suspicious kernel modules detected.
+2025-07-21 00:01:33,795 [INFO] CIS Benchmark Score: 18.8 (breakdown: {'Network': 0.0, 'User': 0.0, 'Service': 0.0, 'FileSystem': 75.0})
+2025-07-21 00:01:33,795 [INFO] TXT report generated: ../reports/audit_report_20250721_000133.txt
+2025-07-21 00:01:33,796 [INFO] JSON report generated: ../reports/audit_report_20250721_000133.json
+2025-07-21 00:01:33,796 [WARNING] Jinja2/Plotly not available, skipping HTML report.
+2025-07-21 00:01:33,796 [INFO] AuditForge audit complete. Reports generated in AuditForge/reports/.
